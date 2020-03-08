@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lmgvc_addon",
+  "name": "LittleMaidGVCAddon",
+  "description": "LittleMaidReengaged Firis's Patch and GVCLib Addon Mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/firis-games/LittleMaidGVCAddon",
+  "updateUrl": "",
+  "authorList": ["firis-games", "SCOPE_MG36"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["lmreengaged", "gvclib"]
+}
+]
