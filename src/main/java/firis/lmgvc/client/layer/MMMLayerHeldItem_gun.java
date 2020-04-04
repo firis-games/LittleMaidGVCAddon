@@ -21,6 +21,7 @@ import net.minecraft.util.ResourceLocation;
  * 手持ちアイテムレイヤー
  * RenderLittleMaidから分離
  */
+@Deprecated
 public class MMMLayerHeldItem_gun extends LayerHeldItem {
 
 	//レイヤーと化したアイテム描画
