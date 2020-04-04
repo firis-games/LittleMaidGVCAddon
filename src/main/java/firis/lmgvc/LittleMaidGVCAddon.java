@@ -35,7 +35,7 @@ public class LittleMaidGVCAddon
 {
     public static final String MODID = "lmgvc_addon";
     public static final String NAME = "LittleMaidGVCAddon";
-    public static final String VERSION = "0.1";
+    public static final String VERSION = "0.2";
     public static final String MOD_DEPENDENCIES = "required-after:forge@[1.12.2-14.23.5.2768,);" 
     		+ "required-after:lmreengaged@[8.1.6.141.fp.027,);"
     		+ "required-after:gvclib@[1.12.2,);";
