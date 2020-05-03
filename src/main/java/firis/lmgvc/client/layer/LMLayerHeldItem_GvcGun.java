@@ -54,7 +54,7 @@ public class LMLayerHeldItem_GvcGun extends AbstractLMLayerHeldItem_GvcGun {
 		
 		int armIndex = handSide == EnumHandSide.RIGHT ? 0 : 1;
 		
-		this.renderer.modelMain.model.Arms[armIndex].postRender(0.0625F);
+		this.renderer.modelMain.armPostRender(armIndex, 0.0625F);
 	}
 
 }
