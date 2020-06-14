@@ -1,6 +1,6 @@
 package firis.lmgvc.client.layer;
 
-import net.firis.lmt.client.renderer.RendererLMAvatar;
+import firis.lmavatar.client.renderer.RendererLMAvatar;
 import net.minecraft.client.renderer.entity.RenderLivingBase;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
