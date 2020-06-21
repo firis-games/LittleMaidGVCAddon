@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -38,6 +39,8 @@ public class LittleMaidGVCAddon
     public static final String VERSION = "0.5";
     public static final String MOD_DEPENDENCIES = "required-after:forge@[1.12.2-14.23.5.2768,);" 
     		+ "required-after:lmlibrary@[1.0.0,);"
+    		+ "after:lmreengaged@[9.0.0,);"
+    		+ "after:lmavatar@[1.0.0,);"
     		+ "required-after:gvclib@[1.12.2,);";
     public static final String MOD_ACCEPTED_MINECRAFT_VERSIONS = "[1.12.2]";
 
@@ -77,7 +80,9 @@ public class LittleMaidGVCAddon
     public void init(FMLInitializationEvent event)
     {
     	//GVC系の弾薬を登録
-    	EntityMode_Archer.arrowClassList.add(ItemMagazine.class);
+    	if (Loader.isModLoaded("lmreengaged")) {
+    		EntityMode_Archer.arrowClassList.add(ItemMagazine.class);
+    	}
     }
     
     @EventHandler
