@@ -28,11 +28,7 @@ public class LMLayerHeldItem_GvcGun extends AbstractLMLayerHeldItem_GvcGun {
 			float partialTicks, float ageInTicks, float netHeadYaw, float headPitch, float scale) {
 				
 		EntityLittleMaid maid = (EntityLittleMaid) entitylivingbaseIn;
-		boolean isWait = maid.isMaidWait();
 		boolean isSneak = maid.isSneaking();
-
-		//待機状態の場合は描画しない
-		if(isWait) return;
 		
 		EnumHandSide mainHandSide = maid.getPrimaryHand() == EnumHandSide.RIGHT ? EnumHandSide.RIGHT : EnumHandSide.LEFT;
 		EnumHandSide offHandSide = maid.getPrimaryHand() == EnumHandSide.RIGHT ? EnumHandSide.LEFT : EnumHandSide.RIGHT;

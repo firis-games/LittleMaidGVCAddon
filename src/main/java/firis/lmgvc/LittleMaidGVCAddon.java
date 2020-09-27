@@ -2,7 +2,9 @@ package firis.lmgvc;
 
 import org.apache.logging.log4j.Logger;
 
+import firis.lmgvc.common.modelmotion.LMMotionGVCGun;
 import firis.lmgvc.common.proxy.IProxy;
+import firis.lmlib.api.LMLibraryAPI;
 import gvclib.item.ItemMagazine;
 import net.blacklab.lmr.entity.littlemaid.mode.EntityMode_Archer;
 import net.minecraft.block.Block;
@@ -74,6 +76,9 @@ public class LittleMaidGVCAddon
         
         //ClientEvent登録
         proxy.registerClientEvent();
+        
+		//追加モーション設定
+		LMLibraryAPI.instance().registerLittleMaidMotion(new LMMotionGVCGun());
     }
     
     @EventHandler
